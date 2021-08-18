@@ -1,0 +1,15 @@
+.header-title {
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weigth: 600;
+  border-bottom: 4px solid var(--second-color);
+  padding-bottom: 0;
+}
+.form-control:focus {
+  border-color: var(--second-color);
+  box-shadow: var(--second-color);
+}
+.btn:focus {
+  border-color: var(--second-color);
+  box-shadow: var(--second-color);
+}

@@ -1,5 +1,7 @@
 import React, { useState } from "react";
+import "./Header.css";
 import { useLocation, useNavigate } from "react-router";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [searchInput, setSearchInput] = useState("");
@@ -17,7 +19,9 @@ const Header = () => {
   return (
     <nav className="navbar navbar-light bg-light px-4">
       <div className="container-fluid">
-        <h1 className="navbar-brand">MailBox</h1>
+        <Link className="navbar-brand header-title" to="/">
+          MailBox
+        </Link>
         <form className="d-flex">
           <input
             className="form-control me-2"

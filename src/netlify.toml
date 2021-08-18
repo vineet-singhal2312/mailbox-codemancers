@@ -1,5 +1,5 @@
 [[redirects]]
 
 from = "/*"
-to="/inbox"
+to="/"
 status = 200

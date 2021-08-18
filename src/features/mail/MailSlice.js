@@ -7,6 +7,7 @@ const initialState = {
   mails: [],
   mail: {},
 };
+
 export const fetchMails = createAsyncThunk("mail/fetchMails", async () => {
   const response = await axios.get(
     "https://run.mocky.io/v3/58770279-0738-4578-a1cf-c56a193fce98"

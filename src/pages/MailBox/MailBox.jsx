@@ -9,17 +9,17 @@ import MailList from "../../components/mailList/MailList.jsx";
 import SideNav from "../../components/sideNav/SideNav.jsx";
 import { fetchMails } from "../../features/mail/MailSlice.js";
 const MailBox = () => {
-  const { category } = useParams();
-
+  const { category = "inbox" } = useParams();
   const mail = useSelector((state) => state.mail);
-
   const dispatch = useDispatch();
   const location = useLocation();
 
   const searchQuery = new URLSearchParams(location.search).get("search");
+
   const searchedMailList = mail.mails.filter((mail) =>
     mail.subject.includes(searchQuery)
   );
+
   const filteredMailList = mail.mails.filter((mail) => mail.tag === category);
 
   let mailsArr = category ? filteredMailList : mail.mails;
@@ -45,7 +45,7 @@ const MailBox = () => {
             <MailList list={mailsArr} />
           </div>
           <div className="col-md-5">
-            <MailBody />
+            {mail.status === "fulfilled" && <MailBody />}
           </div>
         </div>
       </Container>

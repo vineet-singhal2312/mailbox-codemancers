@@ -14,9 +14,3 @@
   text-align: center;
   background-color: var(--grey-two-color);
 }
-.bg-green {
-  /* background-color: #0b8e69; */
-}
-.bg-green:hover {
-  background-color: #0b8e69;
-}

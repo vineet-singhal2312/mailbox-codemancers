@@ -6,12 +6,13 @@ import "./MailBody.css";
 import MailCard from "./MailCard";
 function MailBody() {
   const { mails, mail } = useSelector((state) => state.mail);
-
   const dispatch = useDispatch();
   const location = useLocation();
 
   const idByQuery = new URLSearchParams(location.search).get("id");
+
   const selectedMail = mails.find((mail) => mail.id === JSON.parse(idByQuery));
+
   useEffect(() => {
     if (idByQuery) {
       dispatch(setMail(selectedMail));
@@ -20,11 +21,11 @@ function MailBody() {
 
   return (
     <div className="mail-body rounded-3 p-4">
-      {Object.keys(mail).length ? (
+      {!!Object.keys(mail).length ? (
         <MailCard mail={mail} />
       ) : (
         <div class="alert alert-success" role="alert">
-          Clicked on any mail!!
+          Select any mail
         </div>
       )}
     </div>

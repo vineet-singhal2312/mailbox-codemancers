@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 const MailListCard = ({ mail }) => {
   const location = useLocation();
   const navigate = useNavigate();
+  
   const setQuery = () => {
     const currURLParams = new URLSearchParams(location.search);
     currURLParams.set("id", mail.id);

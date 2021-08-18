@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const sideNavItems = [
   {
-    label: "Messages",
+    label: "All Messages",
     link: "/",
   },
   {
@@ -32,7 +32,7 @@ const SideNav = () => {
         {sideNavItems.map((listItem) => (
           <Link
             className={
-              listItem.label === "Messages"
+              listItem.label === "All Messages"
                 ? "list-group-item  list-item-main rounded-3"
                 : "list-group-item list-group-item-action rounded-3"
             }
