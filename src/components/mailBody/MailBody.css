@@ -1,0 +1,28 @@
+.card-body {
+  padding: 0;
+}
+.mail-body {
+  background-color: #ffffff;
+  min-height: 100%;
+}
+.mail-card-body {
+  min-height: 319px;
+  border: 2px solid var(--grey-one-color);
+}
+.mail-img-user {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}
+.mail-img {
+  height: 300px;
+}
+.mail-card-title {
+  background-color: var(--grey-one-color);
+  padding: 1rem;
+}
+.mail-card-text {
+  background-color: var(--grey-one-color);
+  min-height: 250px;
+  margin-bottom: 0rem;
+}

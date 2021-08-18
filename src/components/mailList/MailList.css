@@ -1,0 +1,29 @@
+.mail-list {
+  background-color: #ffffff;
+  min-height: 100%;
+}
+.mail-list-card-title {
+  margin-bottom: 1rem;
+}
+.mail-list-card-body {
+  min-height: 100px;
+  background-color: var(--main-color);
+  border-bottom: 2px solid var(--grey-one-color);
+  margin: 0.25rem 0;
+  cursor: pointer;
+}
+.mail-list-card-body:hover {
+  background-color: var(--grey-one-color);
+}
+.mail-list-img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+.mail-list-card-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--grey-text-color);
+  height: 30px;
+  padding-left: 3rem;
+}

@@ -1,0 +1,27 @@
+.side-nav {
+  background-color: #ffffff;
+  min-height: 100%;
+}
+.list-item-main {
+  color: var(--main-color);
+  background-color: var(--second-color);
+  outline: none;
+}
+.list-item-main:hover {
+  color: var(--main-color);
+  background-color: var(--second-color);
+  outline: none;
+  opacity: 0.8;
+}
+.list-group-item-action {
+  color: black;
+  margin: 1rem 0;
+}
+.list-group-item-action:hover {
+  color: var(--main-color);
+  background-color: var(--second-color);
+}
+.active-list-group-item-action {
+  color: var(--main-color);
+  background-color: var(--second-color);
+}
